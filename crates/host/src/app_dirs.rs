@@ -56,7 +56,7 @@ pub fn current() -> &'static DataDir {
 
 /// Resolve the data directory from the environment (`env`) and the executable's folder.
 pub fn resolve(env: impl Fn(&str) -> Option<OsString>, exe_dir: Option<&Path>) -> DataDir {
-    if let Some(d) = env("EFFECTCRAFT_CONFIG_DIR") {
+    if let Some(d) = env("BILLO MOTION_CONFIG_DIR") {
         return DataDir { dir: Some(PathBuf::from(d)), mode: Mode::Override, warning: None };
     }
     let platform = platform_dir(&env);
@@ -205,7 +205,7 @@ mod tests {
         std::fs::create_dir_all(&exe).unwrap();
         std::fs::write(exe.join("portable.txt"), b"").unwrap();
         let custom = root.join("custom");
-        let d = resolve(env_of(&[("EFFECTCRAFT_CONFIG_DIR", &custom)]), Some(&exe));
+        let d = resolve(env_of(&[("BILLO MOTION_CONFIG_DIR", &custom)]), Some(&exe));
         assert_eq!((d.mode, d.dir), (Mode::Override, Some(custom)));
         assert!(!exe.join(PORTABLE_DATA_DIR).exists());
         let _ = std::fs::remove_dir_all(&root);

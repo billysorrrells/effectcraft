@@ -307,10 +307,10 @@ fn env_u64(name: &str, default: u64) -> u64 {
 
 #[test]
 fn fuzz_file_open_never_crashes() {
-    let seed = env_u64("EFFECTCRAFT_FUZZ_SEED", 0x00EC_F022);
-    let start = env_u64("EFFECTCRAFT_FUZZ_START", 0);
-    let iters = env_u64("EFFECTCRAFT_FUZZ_ITERS", 3_000);
-    let budget = Duration::from_secs(env_u64("EFFECTCRAFT_FUZZ_SECS", 6));
+    let seed = env_u64("BILLO MOTION_FUZZ_SEED", 0x00EC_F022);
+    let start = env_u64("BILLO MOTION_FUZZ_START", 0);
+    let iters = env_u64("BILLO MOTION_FUZZ_ITERS", 3_000);
+    let budget = Duration::from_secs(env_u64("BILLO MOTION_FUZZ_SECS", 6));
     let seeds = seeds();
     // The unmutated seeds open.
     for s in &seeds {

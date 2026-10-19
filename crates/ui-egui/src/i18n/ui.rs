@@ -97,7 +97,7 @@ const JAPANESE: &[(&str, &str)] = &[
     ("360 View Orientation", "360度ビューの方向"),
     ("3:2 Pulldown: {}", "3:2プルダウン：{}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "モーショングラフィックスとビジュアルエフェクト向けの、クリーンルーム方式で開発されたオープンソースのコンポジットソフトウェアです。macOS、Windows、Linuxでネイティブに動作し、ブラウザーでも使えます。BilloTechクリエイティブアプリファミリーの一員です。",
     ),
     ("About Billo Motion", "Billo Motionについて"),
@@ -647,7 +647,7 @@ const SIMPLIFIED_CHINESE: &[(&str, &str)] = &[
     ("360 View Orientation", "360 视图方向"),
     ("3:2 Pulldown: {}", "3:2 折叠：{}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "一款从零编写、开源的动态图形与视觉效果合成软件：原生支持 macOS、Windows 和 Linux，也可在浏览器中运行。属于 BilloTech 创意应用家族。",
     ),
     ("About Billo Motion", "关于 Billo Motion"),
@@ -1379,7 +1379,7 @@ const TRADITIONAL_CHINESE: &[(&str, &str)] = &[
     ("360 View Orientation", "360 檢視方向"),
     ("3:2 Pulldown: {}", "3:2 摺疊：{}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "一款從零編寫、開源的動態圖形與視覺效果合成軟件：原生支援 macOS、Windows 和 Linux，也可在瀏覽器中執行。屬於 BilloTech 創意應用家族。",
     ),
     ("About Billo Motion", "關於 Billo Motion"),
@@ -2108,7 +2108,7 @@ const UKRAINIAN: &[(&str, &str)] = &[
     ("360 View Orientation", "Орієнтація огляду 360°"),
     ("3:2 Pulldown: {}", "Перетворення кадрів 3:2: {}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "Незалежно розроблена програма з відкритим кодом для компонування анімованої графіки та візуальних ефектів: працює на macOS, Windows і Linux, а також у браузері. Належить до родини творчих програм BilloTech.",
     ),
     ("About Billo Motion", "Про Billo Motion"),
@@ -2671,7 +2671,7 @@ const PORTUGUESE: &[(&str, &str)] = &[
     ("360 View Orientation", "Orientação da vista 360°"),
     ("3:2 Pulldown: {}", "Pulldown 3:2: {}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "Um compositor de código aberto, desenvolvido em clean-room, para motion graphics e efeitos visuais: nativo no macOS, Windows e Linux, e no navegador. Parte da família de aplicativos criativos BilloTech.",
     ),
     ("About Billo Motion", "Sobre o Billo Motion"),
@@ -3114,7 +3114,7 @@ const CZECH: &[(&str, &str)] = &[
     ("360 View Orientation", "Orientace zobrazení 360°"),
     ("3:2 Pulldown: {}", "Převod 3:2 pulldown: {}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "Kompoziční nástroj s otevřeným zdrojovým kódem pro pohyblivou grafiku a vizuální efekty, vyvinutý nezávisle metodou clean-room. Běží nativně na macOS, Windows a Linuxu i v prohlížeči. Patří do rodiny kreativních aplikací BilloTech.",
     ),
     ("About Billo Motion", "O aplikaci Billo Motion"),
@@ -3663,7 +3663,7 @@ const SPANISH: &[(&str, &str)] = &[
     ("360 View Orientation", "Orientación de la vista 360°"),
     ("3:2 Pulldown: {}", "Pulldown 3:2: {}"),
     (
-        "A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
+        "A clean-room, BilloTech compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the BilloTech family of creative apps.",
         "Un compositor de código abierto y desarrollado en sala limpia para gráficos en movimiento y efectos visuales: nativo en macOS, Windows y Linux, y en el navegador. Forma parte de la familia de aplicaciones creativas BilloTech.",
     ),
     ("About Billo Motion", "Acerca de Billo Motion"),

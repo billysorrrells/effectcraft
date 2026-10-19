@@ -1363,7 +1363,7 @@ mod tests {
     /// chin tightly, the mouth corners (the cartoon mouth's ends, as it turns) more loosely.
     #[test]
     fn mediapipe_follows_the_synthetic_face() {
-        let Ok(path) = std::env::var("EFFECTCRAFT_FACE_LANDMARKER") else { return };
+        let Ok(path) = std::env::var("BILLO MOTION_FACE_LANDMARKER") else { return };
         let Ok(effectcraft_segment::Loaded::Face(model)) = effectcraft_segment::load("mediapipe-face", &std::fs::read(path).unwrap()) else {
             panic!("not a face model")
         };

@@ -59,7 +59,7 @@ fn models_are_listed_chosen_and_verified() {
     assert!(s.models.face().is_none());
     assert_eq!(crate::prefs::page_id("Face Tracking"), Some("face"));
     // With the real weights (EFFECTCRAFT_MOBILESAM=path/to/mobile_sam.pt): install, load, use.
-    if let Ok(path) = std::env::var("EFFECTCRAFT_MOBILESAM") {
+    if let Ok(path) = std::env::var("BILLO MOTION_MOBILESAM") {
         s.execute_checked("roto.model.install", json!({"path": path})).unwrap();
         wait_loaded(&mut s, Task::Mask);
         assert_eq!(s.models.status(Task::Mask).active.as_deref(), Some("mobilesam"));
@@ -71,7 +71,7 @@ fn models_are_listed_chosen_and_verified() {
     }
     // EFFECTCRAFT_FACE_LANDMARKER=path/to/face_landmarker.task: installed with its notice,
     // loaded for face tracking, dropped when the classic tracker is chosen, removed.
-    if let Ok(path) = std::env::var("EFFECTCRAFT_FACE_LANDMARKER") {
+    if let Ok(path) = std::env::var("BILLO MOTION_FACE_LANDMARKER") {
         let r = s.execute_checked("face.model.install", json!({"path": path})).unwrap();
         assert_eq!(r["id"], "mediapipe-face");
         let dir = s.models_dir().unwrap();

@@ -17,7 +17,7 @@ fn brief(message: impl std::fmt::Display) -> String {
 
 fn native_device(desc: wgpu::InstanceDescriptor, required: bool) -> Option<(wgpu::Adapter, wgpu::Device, wgpu::Queue)> {
     crate::tests::hold_gpu_lock();
-    let required = required || std::env::var("EFFECTCRAFT_REQUIRE_GPU").is_ok_and(|value| value == "1");
+    let required = required || std::env::var("BILLO MOTION_REQUIRE_GPU").is_ok_and(|value| value == "1");
     let instance = wgpu::Instance::new(desc);
     let adapter = match pollster::block_on(
         instance.request_adapter(&wgpu::RequestAdapterOptions { power_preference: wgpu::PowerPreference::HighPerformance, ..Default::default() }),

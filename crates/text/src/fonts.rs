@@ -94,7 +94,7 @@ impl DirectorySource {
         // folders (/run/host/…) and the folders the fontconfig configuration names.
         #[cfg(all(unix, not(target_os = "macos"), not(target_arch = "wasm32")))]
         dirs.extend(crate::font_dirs::unix_font_dirs(&crate::font_dirs::FontEnv::from_process()));
-        dirs.extend(extra_dirs(std::env::var_os("EFFECTCRAFT_FONT_DIRS").as_deref()));
+        dirs.extend(extra_dirs(std::env::var_os("BILLO MOTION_FONT_DIRS").as_deref()));
         Self { dirs }
     }
 }
@@ -663,7 +663,7 @@ fn requested_cjk_locale() -> Option<String> {
 /// environment (`LANG`, `LC_ALL`, `LC_CTYPE`; `EFFECTCRAFT_CJK_LOCALE` overrides them).
 fn active_cjk_locale() -> String {
     requested_cjk_locale().unwrap_or_else(|| {
-        ["EFFECTCRAFT_CJK_LOCALE", "LC_ALL", "LC_CTYPE", "LANG"]
+        ["BILLO MOTION_CJK_LOCALE", "LC_ALL", "LC_CTYPE", "LANG"]
             .iter()
             .filter_map(|k| std::env::var(k).ok())
             .map(|v| v.trim().to_ascii_lowercase())

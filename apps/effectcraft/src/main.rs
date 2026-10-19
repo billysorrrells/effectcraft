@@ -104,9 +104,9 @@ fn parse_args(args: impl IntoIterator<Item = String>, env_port: Result<String, s
     if out.control_port.is_none() {
         out.control_port = match env_port {
             Ok(v) if v.is_empty() => None,
-            Ok(v) => Some(control_port("EFFECTCRAFT_CONTROL_PORT", Some(&v))?),
+            Ok(v) => Some(control_port("BILLO MOTION_CONTROL_PORT", Some(&v))?),
             Err(std::env::VarError::NotPresent) => None,
-            Err(std::env::VarError::NotUnicode(v)) => Some(control_port("EFFECTCRAFT_CONTROL_PORT", Some(&v.to_string_lossy()))?),
+            Err(std::env::VarError::NotUnicode(v)) => Some(control_port("BILLO MOTION_CONTROL_PORT", Some(&v.to_string_lossy()))?),
         };
     }
     Ok(Some(out))
@@ -128,7 +128,7 @@ fn main() -> eframe::Result {
     // feed the compatibility report.
     effectcraft_engine::logging::install();
     effectcraft_engine::logging::install_panic_hook();
-    let Args { control_port, files, demo, home } = match parse_args(std::env::args().skip(1), std::env::var("EFFECTCRAFT_CONTROL_PORT")) {
+    let Args { control_port, files, demo, home } = match parse_args(std::env::args().skip(1), std::env::var("BILLO MOTION_CONTROL_PORT")) {
         Ok(Some(args)) => args,
         Ok(None) => {
             println!("effectcraft {}", env!("CARGO_PKG_VERSION"));
@@ -584,7 +584,7 @@ mod tests {
     /// used, so a bad value doesn't stop `--control` or `--version`.
     #[test]
     fn control_port_variable_is_checked_when_used() {
-        let need = "EFFECTCRAFT_CONTROL_PORT needs a port number from 1 to 65535";
+        let need = "BILLO MOTION_CONTROL_PORT needs a port number from 1 to 65535";
         assert_eq!(parse_env(&[], Ok("abc".into())).unwrap_err(), format!("{need}, not `abc`"));
         assert_eq!(parse_env(&[], Ok("0".into())).unwrap_err(), format!("{need}, not `0`"));
         assert_eq!(parse_env(&[], Ok(String::new())), Ok(Some(Args::default())));

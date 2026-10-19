@@ -342,7 +342,7 @@ fn backend(args: &Args, default_demo: bool) -> Result<Backend, Failure> {
 fn session(args: &Args) -> Result<effectcraft_engine::Session, Failure> {
     let mut s = effectcraft_host::session();
     if args.flag("--autosave") {
-        let dir = effectcraft_host::config_dir().ok_or_else(|| Failure::Error("--autosave: no config directory; set EFFECTCRAFT_CONFIG_DIR".into()))?;
+        let dir = effectcraft_host::config_dir().ok_or_else(|| Failure::Error("--autosave: no config directory; set BILLO MOTION_CONFIG_DIR".into()))?;
         // Read only auto-save settings. Opting in must not change headless rendering or load
         // the desktop's models, shortcuts, disk cache or recovery sentinel.
         use effectcraft_engine::config::ConfigStore;
@@ -614,7 +614,7 @@ fn run(cmd: &str, args: &Args, json_out: bool) -> Result<(), Failure> {
             let server = McpServer::new(b);
             let mut server = if args.flag("--autosave") {
                 let root =
-                    effectcraft_host::config_dir().ok_or_else(|| Failure::Error("--autosave: no config directory; set EFFECTCRAFT_CONFIG_DIR".into()))?;
+                    effectcraft_host::config_dir().ok_or_else(|| Failure::Error("--autosave: no config directory; set BILLO MOTION_CONFIG_DIR".into()))?;
                 server.with_autosave(&root)?
             } else {
                 server

@@ -303,7 +303,7 @@ mod tests {
     /// to record these sums).
     #[test]
     fn matches_tensorflow_lite_on_the_official_weights() {
-        let Some(path) = std::env::var_os("EFFECTCRAFT_FACE_LANDMARKER") else { return };
+        let Some(path) = std::env::var_os("BILLO MOTION_FACE_LANDMARKER") else { return };
         let bytes = std::fs::read(path).unwrap();
         let m = FaceLandmarker::from_task(&bytes).unwrap();
         let input = |n: usize| -> Vec<f32> { (0..n).map(|i| ((i as f32) * 0.013).sin() * 0.5).collect() };
